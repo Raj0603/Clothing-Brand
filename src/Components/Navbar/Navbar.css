@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+.navbar-main{
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+}
+
+.nav-logo{
+    width: 50px;
+    height: 50px;
+    /* border: 2px solid black; */
+    margin-left: 20px;
+}
+
+.left-nav{
+    width: 15%;
+    text-align: left;
+}
+
+.center-nav{
+    width: 27%;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+}
+.right-nav{
+    width: 58%;
+    text-align: right;
+}
+
+.right-search{
+    display: flex;
+    flex-direction: row;
+    margin-left: 11vmax;
+    margin-top: 4px;
+}
+
+.search-list{
+    margin-left: 40px;
+    margin-right: 0px;
+    list-style: none;
+    
+}
+
+#nav-search{
+    border-radius: 30px;
+    width: 33vw;
+    height: 35px;
+    text-align: center;
+    font-size: large;
+}
+
+.icon-nav{
+    margin-top: 10px;
+}
+
+.center-nav .nav-a-list{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    /* display: flex; */
+}
+
+.center-nav .nav-a-list:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: all 0.5s linear;
+}
+
+.center-nav .nav-a-list:hover:before{
+    width: 100%;
+}
+
+.nav-a-list{
+    /* display: inline-block; */
+    padding: 13px 13px;
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    width: 50vw;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.dropdown-li{
+    margin-top: 20px;
+    /* width: 100%; */
+    display: none;
+    padding-left: 30px;
+    height: 30px;
+}
+
+.center-nav .nav-a-list:hover > .dropdown .dropdown-li{
+    display: block;
+}
+
+.center-nav .nav-a-list:hover > .dropdown{
+    perspective: 1000px;
+}
+
+
+
